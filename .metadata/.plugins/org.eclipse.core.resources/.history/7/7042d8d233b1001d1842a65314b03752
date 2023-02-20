@@ -1,0 +1,8 @@
+package Bai03;
+
+public class Cylinder {
+	private double r;
+	private double h;
+	
+	
+}

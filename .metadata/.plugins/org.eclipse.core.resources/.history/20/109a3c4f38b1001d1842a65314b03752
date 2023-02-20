@@ -1,0 +1,23 @@
+package Bai04;
+
+import java.util.Scanner;
+
+public class DiemSinhVienDemo {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int n = 3;
+		for (int i = 0; i < n; i++) {
+			System.out.println("Nhap ma so cua sinh vien sv" + (i+1) + ":");
+			int masv = sc.nextInt();
+			System.out.println("Nhap ho va ten cua sinh vien sv" + (i+1) + ":");
+			System.out.println("Nhap diem ly thuyet cua sinh vien sv" + (i+1) + ":");
+			System.out.println("Nhap diem thuc hanh cua sinh vien sv" + (i+1) + ":");
+		}
+		
+		
+		System.out.println();
+	}
+}
+//String a = "";
+//System.out.println(String.format("masv%7shoten%50sdiemlt%5sdiemth%5sdiemtb",a,a,a,a));

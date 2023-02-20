@@ -1,0 +1,23 @@
+package Bai04;
+
+public class DiemSinhVien {
+	private int msv;
+	private String hoTen;
+	private double diemLT;
+	private double diemTH;
+	
+	public DiemSinhVien() {
+		this.msv = 0;
+		this.hoTen = null;
+		this.diemLT = 0;
+		this.diemTH = 0;
+	}
+
+	public DiemSinhVien(int msv, String hoTen, double diemLT, double diemTH) {
+		super();
+		this.msv = msv;
+		this.hoTen = hoTen;
+		this.diemLT = diemLT;
+		this.diemTH = diemTH;
+	}
+}

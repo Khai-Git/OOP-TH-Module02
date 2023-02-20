@@ -1,0 +1,21 @@
+package Bai02;
+
+public class Point {
+	private String ten;
+	private double a;
+	private double b;
+	
+	public Point() {
+		this.ten = null;
+		this.a = 0;
+		this.b = 0;
+	}
+
+	public Point(String ten, double a, double b) {
+		super();
+		this.ten = ten;
+		this.a = a;
+		this.b = b;
+	}
+	
+}

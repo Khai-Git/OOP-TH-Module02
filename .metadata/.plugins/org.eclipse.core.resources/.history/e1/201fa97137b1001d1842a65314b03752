@@ -1,0 +1,69 @@
+package Bai04;
+
+public class DiemSinhVien {
+	private int msv;
+	private String hoTen;
+	private double diemLT;
+	private double diemTH;
+	
+	public DiemSinhVien() {
+		this.msv = 0;
+		this.hoTen = null;
+		this.diemLT = 0;
+		this.diemTH = 0;
+	}
+
+	public DiemSinhVien(int msv, String hoTen, double diemLT, double diemTH) {
+		super();
+		this.msv = msv;
+		this.hoTen = hoTen;
+		this.diemLT = diemLT;
+		this.diemTH = diemTH;
+	}
+
+	public int getMsv() {
+		return msv;
+	}
+
+	public void setMsv(int msv) {
+		this.msv = msv;
+	}
+
+	public String getHoTen() {
+		return hoTen;
+	}
+
+	public void setHoTen(String hoTen) {
+		this.hoTen = hoTen;
+	}
+
+	public double getDiemLT() {
+		return diemLT;
+	}
+
+	public void setDiemLT(double diemLT) {
+		this.diemLT = diemLT;
+	}
+
+	public double getDiemTH() {
+		return diemTH;
+	}
+
+	public void setDiemTH(double diemTH) {
+		this.diemTH = diemTH;
+	}
+	
+	public double diemTB() {
+		return (diemLT + diemTH) / 2;
+	}
+
+	@Override
+	public String toString() {
+		String a = "";
+		System.out.println(String.format("masv%7shoten%50sdiemlt%5sdiemth%5sdiemtb",a,a,a,a));
+		
+		return String.format("%7d%50s%-5f%-5f%-5f",msv,hoTen,diemLT,diemTH,diemTB());
+	}
+	
+	
+}

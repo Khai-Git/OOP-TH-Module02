@@ -1,0 +1,8 @@
+package Bai04;
+
+public class DiemSinhVienDemo {
+	public static void main(String[] args) {
+		System.out.println("a\tb\t\tc");
+		System.out.println("a     b     c");
+	}
+}
