@@ -16,6 +16,6 @@ public class CylinderDemo {
 		
 		System.out.println("Dien tich xung quanh = " + c.Sxq());
 		System.out.println("Dien tich xung quanh = " + c.Stp());
-		System.out.println("Dien tich xung quanh = " + c.tinhTheTich());
+		System.out.println("Dien tich xung quanh = " + c.VCylinder());
 	}
 }

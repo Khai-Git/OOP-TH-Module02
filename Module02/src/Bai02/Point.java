@@ -51,11 +51,14 @@ public class Point {
 		return "Point [ten=" + ten + ", a=" + a + ", b=" + b + "]" + " or " + ten + "(" + a + "," + b + ")";
 	}
 
-	public String negate() {
+	public Point negate() {
 		double adx = -a;
 		double bdx = -b;
-		String tenDX = ten + "DoiXung";
+		String tendx = ten + "DoiXung";
 		
-		return "Point [ten=" + tenDX + ", a=" + adx + ", b=" + bdx + "]"  + " or " + ten + "(" + adx + "," + bdx + ")";
+		Point dx = new Point(tendx, adx, bdx);
+		
+		return dx;
+//		return "Point [ten=" + tenDX + ", a=" + adx + ", b=" + bdx + "]"  + " or " + ten + "(" + adx + "," + bdx + ")";
 	}
 }

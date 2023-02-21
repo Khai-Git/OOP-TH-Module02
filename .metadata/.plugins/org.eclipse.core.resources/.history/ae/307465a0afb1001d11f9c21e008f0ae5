@@ -1,0 +1,9 @@
+package Bai05;
+
+public class HinhTamGiac {
+	private double ma;
+	private double mb;
+	private double mc;
+	
+	
+}

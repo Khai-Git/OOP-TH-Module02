@@ -38,7 +38,7 @@ public class Cylinder {
 		return 2 * Math.PI * r * (r + h);
 	}
 	
-	public double tinhTheTich() {
+	public double VCylinder() {
 		return Math.PI * Math.pow(r, 2) * h;
 	}
 	
