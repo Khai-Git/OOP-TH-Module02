@@ -3,13 +3,13 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="Bai01.ToaDo"/>
-    <fullyQualifiedTypeName name="Bai02.Point"/>
     <fullyQualifiedTypeName name="java.lang.FdLibm.Pow"/>
     <fullyQualifiedTypeName name="Bai03.Cylinder"/>
-    <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="javax.xml.transform.Templates"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="Bai04.DiemSinhVien"/>
+    <fullyQualifiedTypeName name="Bai02.Point"/>
+    <fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>
