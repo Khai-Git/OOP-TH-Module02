@@ -1,9 +1,0 @@
-package Bai02;
-
-public class Point {
-	private String ten;
-	private double a;
-	private double b;
-	
-	
-}

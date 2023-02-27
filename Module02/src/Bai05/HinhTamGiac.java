@@ -11,9 +11,9 @@ public class HinhTamGiac {
 	}
 	public HinhTamGiac(double ma, double mb, double mc) {
 		super();
-		this.ma = ma;
-		this.mb = mb;
-		this.mc = mc;
+		setMa(ma);
+		setMb(mb);
+		setMc(mc);
 	}
 	public double getMa() {
 		return ma;
@@ -36,17 +36,18 @@ public class HinhTamGiac {
 	public double getMc() {
 		return mc;
 	}
-	public int checkTamGiac() {
+	public String checkTamGiac() {
 		if(ma+mb>mc || ma+mc>mb || mc+mb>ma) {//Tam giac thuong
-			return 0;
-		} else if(ma==mb || ma==mc || mc==mb) { //Tam giac can
-			return 1;
+			return "thuong";
+		} else if(ma == 0 && mb == 0 && mc == 0) { //Tam giac can
+			return "Khong phai tam giac";
 		} else if(ma==mb && mb==mc) {//Tam giac deu
-			return 2;
-		} if(ma == 0 && mb == 0 && mc == 0) { //Khong phai tam giac
-			return -1;
+			return "deu";
+		} else if(ma==mb || ma==mc || mc==mb) { //Khong phai tam giac
+			return "can";
+		} else {
+			return "Ngoai le";
 		}
-		return -1;
 	}
 	public double Ptg() {
 		return ma+mb+mc;
@@ -65,20 +66,13 @@ public class HinhTamGiac {
 		}
 		this.mc = mc;
 	}
-	public String kieuTamGiac() {
-		if (checkTamGiac() == -1) {
-			return "Khong phai tam giac";
-		} else if (checkTamGiac() == 0){
-			return "thuong";
-		} else if(checkTamGiac() == 1) {
-			return "can";
-		} else {
-			return "deu";
-		}
-	}
+//	@Override
+//	public String toString() {
+//		return "HinhTamGiac [ma=" + ma + ", mb=" + mb + ", mc=" + mc + ", checkTamGiac()=" + checkTamGiac() + ", Ptg()=" + Ptg() + ", Stg()=" + Stg() + "]";
+//	}
 	@Override
 	public String toString() {
-		return "HinhTamGiac [ma=" + ma + ", mb=" + mb + ", mc=" + mc + ", kieuTamGiac()=" + kieuTamGiac() + ", Ptg()=" + Ptg() + ", Stg()=" + Stg() + "]";
+		return String.format("%15.2f|%8.2f|%8.2f|%20s|%17.2f|%17.2f|",ma,mb,mc,checkTamGiac(),Ptg(),Stg());
 	}
 	
 }

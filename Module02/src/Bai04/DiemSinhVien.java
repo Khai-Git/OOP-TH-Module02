@@ -8,17 +8,17 @@ public class DiemSinhVien {
 	
 	public DiemSinhVien() {
 		this.msv = 0;
-		this.hoTen = null;
+		this.hoTen = "Chua biet";
 		this.diemLT = 0;
 		this.diemTH = 0;
 	}
 
 	public DiemSinhVien(int msv, String hoTen, double diemLT, double diemTH) {
 		super();
-		this.msv = msv;
-		this.hoTen = hoTen;
-		this.diemLT = diemLT;
-		this.diemTH = diemTH;
+		setMsv(msv);
+		setHoTen(hoTen);
+		setDiemLT(diemLT);
+		setDiemTH(diemTH);
 	}
 
 	public int getMsv() {
@@ -38,6 +38,8 @@ public class DiemSinhVien {
 	}
 
 	public void setHoTen(String hoTen) {
+		if (hoTen.isEmpty())
+			this.hoTen = "Chua biet";
 		this.hoTen = hoTen;
 	}
 
