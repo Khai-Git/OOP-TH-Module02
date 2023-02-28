@@ -10,7 +10,7 @@ public class HinhTamGiac {
 		this.mc = 0;
 	}
 	private boolean isTamGiac(double ma, double mb, double mc) {
-		if(ma+mb>mc || ma+mc>mb || mb+mc>ma)
+		if(ma + mb > mc && ma + mc > mb && mb + mc > ma)
 			return true;
 		return false;
 	}
@@ -48,16 +48,14 @@ public class HinhTamGiac {
 			this.mc = mc;
 	}
 	public String checkTamGiac() {
-		if(ma+mb>mc || ma+mc>mb || mc+mb>ma) {//Tam giac thuong
-			return "thuong";
-		} else if(ma == 0 && mb == 0 && mc == 0) { //Tam giac can
+		if (!isTamGiac(ma, mb, mc)) {// Khong phai tam giac
 			return "Khong phai tam giac";
-		} else if(ma==mb && mb==mc) {//Tam giac deu
-			return "deu";
-		} else if(ma==mb || ma==mc || mc==mb) { //Khong phai tam giac
-			return "can";
+		} else if ((ma == mb && ma != mc && mb != mc) || (mb == mc && mb != ma && mc != ma) || (ma == mc && ma != mb && mc != mb)){// Tam giac can
+			return "Can";
+		} else if (ma == mb && mb == mc && ma == mc) {//Tam giac deu
+			return "Deu";
 		} else {
-			return "Ngoai le";
+			return "Thuong";
 		}
 	}
 	public double chuViTamGiac() {
@@ -72,6 +70,9 @@ public class HinhTamGiac {
 //	public String toString() {
 //		return "HinhTamGiac [ma=" + ma + ", mb=" + mb + ", mc=" + mc + ", checkTamGiac()=" + checkTamGiac() + ", Ptg()=" + Ptg() + ", Stg()=" + Stg() + "]";
 //	}
+	public static String getTieuDe() {
+		return String.format("%15s|%8s|%8s|%20s|%17s|%17s|","ma","mb","mc","LoaiTamGiac","Chu vi","Dien tich");
+	}
 	@Override
 	public String toString() {
 		return String.format("%15.2f|%8.2f|%8.2f|%20s|%17.2f|%17.2f|",ma,mb,mc,checkTamGiac(),chuViTamGiac(),dienTichTamGiac());

@@ -8,7 +8,7 @@ public class HinhTamGiacDemo {
 		HinhTamGiac h4 = new HinhTamGiac(5,5,3);
 		HinhTamGiac h5 = new HinhTamGiac(4,4,4);
 		
-		System.out.println(String.format("%15s|%8s|%8s|%20s|%17s|%17s|","ma","mb","mc","LoaiTamGiac","Chu vi","Dien tich"));
+		System.out.println(HinhTamGiac.getTieuDe());
 		System.out.println("-------------------------------------------------------------------------------------------");
 		System.out.println(h1);
 		System.out.println(h2);
