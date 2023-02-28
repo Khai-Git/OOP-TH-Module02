@@ -4,7 +4,7 @@ public class HinhTamGiacDemo {
 	public static void main(String[] args) {
 		HinhTamGiac h1 = new HinhTamGiac(-2,-4,-9);
 		HinhTamGiac h2 = new HinhTamGiac(-5,0,9);
-		HinhTamGiac h3 = new HinhTamGiac(4,8,3);
+		HinhTamGiac h3 = new HinhTamGiac(4,6,3);
 		HinhTamGiac h4 = new HinhTamGiac(5,5,3);
 		HinhTamGiac h5 = new HinhTamGiac(4,4,4);
 		
