@@ -65,7 +65,7 @@ public class ThongTinDangKyXe {
 		}
 	}
 	public static String getTieuDe() {
-		return String.format("%-25s%-15s%10s%30s%30s\n","Ten chu xe","Loai xe","Dung tich","Tri gia","Thue phai nop") + String.format("=========================================================================================================");
+		return String.format("%-25s%-15s%10s%30s%30s\n","Ten chu xe","Loai xe","Dung tich","Tri gia","Thue phai nop") + String.format("==============================================================================================================");
 	}
 	@Override
 	public String toString() {
