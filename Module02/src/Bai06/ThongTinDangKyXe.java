@@ -55,5 +55,20 @@ public class ThongTinDangKyXe {
 		if (dungTichXyLanh >= 0)
 			this.dungTichXyLanh = dungTichXyLanh;
 	}
-	
+	public double thuePhaiNop() {
+		if (dungTichXyLanh < 100) {
+				return 0.01 * triGiaXe;
+		} else if (dungTichXyLanh <= 200) {
+			return 0.03 * triGiaXe;
+		} else {
+			return 0.05 * triGiaXe;
+		}
+	}
+	public static String getTieuDe() {
+		return String.format("%-25s%-15s%10s%30s%30s\n","Ten chu xe","Loai xe","Dung tich","Tri gia","Thue phai nop") + String.format("=========================================================================================================");
+	}
+	@Override
+	public String toString() {
+		return String.format("%-25s%-15s%10d%30.2f%30.2f",chuXe,loaiXe,dungTichXyLanh,triGiaXe,thuePhaiNop());
+	}
 }
