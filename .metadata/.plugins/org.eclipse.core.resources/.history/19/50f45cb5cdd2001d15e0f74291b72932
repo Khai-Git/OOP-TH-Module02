@@ -1,0 +1,6 @@
+package Bai01;
+
+public class ChuyenXeNgoaiThanh {
+	private String noiDen;
+	private int soNgayDiDuoc;
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+E:\STUDY\2223HK2\Lap Trinh Huong Doi Tuong_OOP\OOP-TH-Module02\OOP-TH-Module02\.metadata\.plugins\org.eclipse.jdt.core
+925059340.index
+1076132250.index
+1865797976.index

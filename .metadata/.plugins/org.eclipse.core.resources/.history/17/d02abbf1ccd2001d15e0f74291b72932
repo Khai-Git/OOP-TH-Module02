@@ -1,0 +1,7 @@
+package Bai01;
+
+public class ChuyenXe {
+//	 Chuyến xe nội thành: Mã số chuyến, Họ tên tài xế, số xe, số tuyến, số km đi được, doanh thu. 
+//	 Chuyến xe ngoại thành: Mã số chuyến, Họ tên tài xế, số xe, nơi đến, số ngày đi được, doanh thu. 
+	
+}

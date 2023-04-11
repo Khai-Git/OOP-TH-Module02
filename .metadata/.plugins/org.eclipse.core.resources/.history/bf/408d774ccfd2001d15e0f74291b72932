@@ -1,0 +1,27 @@
+package Bai01;
+
+public class ChuyenXeNoiThanh {
+	private int soTuyen;
+	private double soKmDiDuoc;
+	public ChuyenXeNoiThanh() {
+		// TODO Auto-generated constructor stub
+	}
+	public ChuyenXeNoiThanh(int soTuyen, double soKmDiDuoc) {
+		super();
+		this.soTuyen = soTuyen;
+		this.soKmDiDuoc = soKmDiDuoc;
+	}
+	public int getSoTuyen() {
+		return soTuyen;
+	}
+	public void setSoTuyen(int soTuyen) {
+		this.soTuyen = soTuyen;
+	}
+	public double getSoKmDiDuoc() {
+		return soKmDiDuoc;
+	}
+	public void setSoKmDiDuoc(double soKmDiDuoc) {
+		this.soKmDiDuoc = soKmDiDuoc;
+	}
+	
+}

@@ -1,0 +1,13 @@
+package Bai01;
+
+public class Demo01 {
+	public static void main(String[] args) {
+		ChuyenXeNgoaiThanh xNGT1 = new ChuyenXeNgoaiThanh("Vung Tau", 3);
+		ChuyenXeNgoaiThanh xNGT2 = new ChuyenXeNgoaiThanh("Bac Lieu", 2);
+		ChuyenXeNoiThanh xNT1 = new ChuyenXeNoiThanh(1, 300);
+		ChuyenXeNoiThanh xNT2 = new ChuyenXeNoiThanh(2, 500);
+		ChuyenXe cx = new ChuyenXe("001", "Banh Thi Hue", "4", 300000);
+		
+		
+	}
+}

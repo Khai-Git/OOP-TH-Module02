@@ -1,0 +1,8 @@
+package Bai01;
+
+public class ChuyenXe {
+	private String maSoChuyen;
+	private String hoTenTX;
+	private String soXe;
+	private double doanhThu;
+}
